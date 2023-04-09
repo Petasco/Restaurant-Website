@@ -21,7 +21,7 @@ $body = "Name: $name\nEmail: $email\nPhone: $number\nFood: $foodname\nQuantity: 
 $headers = "From: $email";
 
 if (mail($to, $subject, $body, $headers)) {
-  echo "Thank you for your message!";
+  echo "Order Submitted Successfully!";
 } else {
   echo "Sorry, there was a problem sending your address.";
 }

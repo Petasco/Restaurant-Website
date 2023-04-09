@@ -16,7 +16,7 @@ $address = htmlspecialchars($address);
 
 // Send the email
 $to = "peterdiyouh@gmail.com";
-$subject = "New Form Submission";
+$subject = "New Order Submission";
 $body = "Name: $name\nEmail: $email\nPhone: $number\nFood: $foodname\nQuantity: $quantity\nAddress:\n$address";
 $headers = "From: $email";
 

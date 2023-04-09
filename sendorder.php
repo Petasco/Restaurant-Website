@@ -23,6 +23,6 @@ $headers = "From: $email";
 if (mail($to, $subject, $body, $headers)) {
   echo "Order Submitted Successfully!";
 } else {
-  echo "Sorry, there was a problem sending your address.";
+  echo "Sorry, there was a problem sending your order.";
 }
 ?>

@@ -518,12 +518,13 @@
             <img src="images/order-img.jpg" alt="servant image">
         </div>
 
-        <form action="https://formsubmit.co/1470d7537d3f50b1e240c7723ff4f198" method="POST">
+       <!--  <form action="sendorder.php" method="POST"> -->
+        <form action="https://formsubmit.co/1470d7537d3f50b1e240c7723ff4f198" method="POST"> 
             <input type="hidden" name="_template" value="table">
             
             <input type="hidden" name="_subject" value="New Order submission!">
             <input type="hidden" name="_autoresponse" value="Your Order has been Submitted Successfully!">
-            
+             
             <div class="inputBox">
                 <input type="text" id="name" name="Name" placeholder="Name" required>
                 <input type="email" id="email" name="Email" placeholder="Email" required>
@@ -532,12 +533,12 @@
             </div>
 
             <div class="inputBox">
-                <input type="text" id="number" name="Phone Number" placeholder="Phone Number" required>
-                <input type="text" id="foodname" name="Food Name" placeholder="Food Name" required>
+                <input type="text" id="number" name="Number" placeholder="Phone Number" required>
+                <input type="text" id="foodname" name="Foodname" placeholder="Food Name" required>
                 <input type="number" id="quantity" name="Quantity" placeholder="Qauntity" required>
             </div>
 
-            <textarea placeholder="Delivery Address" name="Delivery Address" id="address" cols="30" rows="10"></textarea>
+            <textarea placeholder="Delivery Address" name="Address" id="address" cols="30" rows="10"></textarea>
             <div class="payment">
                 <h5>Note: Payment on Delivery</h5>
             </div>

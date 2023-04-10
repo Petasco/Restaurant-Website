@@ -21,6 +21,7 @@ $body = "Name: $name\nEmail: $email\nPhone: $number\nFood: $foodname\nQuantity: 
 $headers = "From: $email";
 
 if (mail($to, $subject, $body, $headers)) {
+  // note: you need to have SMTP setup before
   echo "Order Submitted Successfully!";
 } else {
   echo "Sorry, there was a problem sending your order.";

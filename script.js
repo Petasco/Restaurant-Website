@@ -41,12 +41,12 @@ function sendViaWhatsApp() {
   var address = document.getElementById("address").value;
   
   var url = "https://wa.me/233547736844?text="
-  + "Name: " + name + "%0a"
-  + "Email: " + email + "%0a"
-  + "Number: " + number + "%0a"
-  + "Food Name: " + foodname + "%0a"
-  + "Quantity: " + quantity + "%0a"
-  + "Delivery Address: " + address;
+  + "*Name:* " + name + "%0a%0a"
+  + "*Email:* " + email + "%0a%0a"
+  + "*Number:* " + number + "%0a%0a"
+  + "*Food Name:* " + foodname + "%0a%0a"
+  + "*Quantity:* " + quantity + "%0a%0a"
+  + "*Delivery Address:* " + address;
 
   // open the WhatsApp url on a new tab
   window.open(url, '_blank').focus();

@@ -441,7 +441,7 @@ header .navbar a:hover{
   flex-wrap: wrap;
 }
 
-.order .row form .inputBox input, .order .row form textarea{
+.order .row form .inputBox input, select, .order .row form textarea{
   padding:1rem;
   margin:1rem 0;
   font-size: 1.7rem;
@@ -464,6 +464,9 @@ header .navbar a:hover{
 
 .order .row form .btn:hover{
   background:var(--red);
+}
+.order .order_btns{
+  display: inline-flex;
 }
 
 
@@ -559,7 +562,7 @@ header .navbar a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
+  width: 20rem;
   margin-left: 10rem;
 }
 

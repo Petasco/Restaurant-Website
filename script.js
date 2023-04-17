@@ -30,6 +30,29 @@ function fadeOut(){
 }
 
 window.onload = fadeOut();
+// ========================= Search Bar ====================
+const searchBtn = document.querySelector(".search-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+const searchBox = document.querySelector(".search-box");
+const searchInput = document.querySelector("input");
+const faSearch = document.querySelector(".fa-search");
+
+searchBtn.onclick = () => {
+  searchBox.classList.add("active");
+  searchInput.classList.add("active");
+  searchBtn.classList.add("active");
+  cancelBtn.classList.add("active");
+  faSearch.classList.add("active");
+
+}
+
+cancelBtn.onclick = () => {
+  searchBox.classList.remove("active");
+  searchInput.classList.remove("active");
+  searchBtn.classList.remove("active");
+  cancelBtn.classList.remove("active");
+}
+
 
 function sendViaWhatsApp() {
   // get the form data

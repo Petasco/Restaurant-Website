@@ -126,6 +126,72 @@ header .navbar a:hover{
   color: #ff3838;
 }
 
+/* ********************* search bar +++++++++++++++ */
+.search-box{
+  position: relative;
+  height: 36px;
+  width: 36px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box.active{
+  width: 250px;
+  background: gainsboro;
+  border-radius: 3rem;
+}
+.search-box input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  background: gainsboro;
+  font-size: 18px;
+  padding: 0 20px 0 10px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+.search-box input.active{
+  opacity: 1;
+}
+.search-box .search-btn{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  z-index: 1;
+  background: #df0000;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-box .search-btn.active{
+  right: 3px;
+  width: 35px;
+  height: 35px;
+  background: #df0000;
+  line-height: 50px;
+  transform: translateY(-50%) rotate(360deg);
+}
+.search-box .cancel-btn{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #ff0000;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box .cancel-btn.active{
+  right: -35px;
+}
+
 #menu-bar{
   font-size: 3rem;
   cursor: pointer;
@@ -644,7 +710,42 @@ header .navbar a:hover{
   .order .row form .inputBox input{
     width:100%;
   }
-
+  header .logo img{
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .search-box{
+    height: 25px;
+    width: 25px;
+  }
+  .search-box.active{
+    width: 150px;
+  }
+  .search-box input{
+    font-size: 12px;
+  }
+  .search-box .search-btn.active{
+  /*
+    right: 3px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    background: gainsboro;
+  */
+    display: none;
+  }
+  .search-box .search-btn .fa-search.active{
+    display: none;
+  }
+  .search-box .cancel-btn.active{
+    right: 3px;
+  }
+  .call{
+    font-size: 12px;
+  }
   .payment_btn{
     display: flex;
     justify-content: center;
@@ -652,4 +753,6 @@ header .navbar a:hover{
     width: 25rem;
     margin-left: 7rem;
   }
+ 
+ 
 }

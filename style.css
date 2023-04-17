@@ -465,9 +465,7 @@ header .navbar a:hover{
 .order .row form .btn:hover{
   background:var(--red);
 }
-.order .order_btns{
-  display: inline-flex;
-}
+
 
 
 /* ============================== Footer====================================*/
@@ -562,7 +560,7 @@ header .navbar a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20rem;
+  width: 30rem;
   margin-left: 10rem;
 }
 

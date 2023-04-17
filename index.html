@@ -536,7 +536,19 @@
 
             <div class="inputBox">
                 <input type="text" id="number" name="Number" placeholder="Phone Number" required>
-                <input type="text" id="foodname" name="Foodname" placeholder="Food Name" required>
+                
+                <select name="Foodname" id="foodname" placeholder="Select Food">
+                    <option value="">Tuna Pizza</option>
+                    <option value="">Burger</option>
+                    <option value="">Chicken</option>
+                    <option value="">Hawaiian</option>
+                    <option value="">Kersame</option>
+                    <option value="">Crisibreezi</option>
+                    <option value="">Gretaben</option>
+                    <option value="">Cakes</option>
+                    <option value="">Pizza</option>
+                    <option value="">Kersame</option>
+                </select>
                 <input type="number" id="quantity" name="Quantity" placeholder="Qauntity" required>
             </div>
 
@@ -564,7 +576,14 @@
             </div>
             -->
 
-            <input type="submit" value="submit" class="btn payment_btn">
+            <div class="order_btns">
+                <input type="submit" value="submit" class="btn payment_btn">
+                <span
+                    onclick="sendViaWhatsApp()">
+                    <input type="submit" value="WhatsApp" class="btn payment_btn">
+                </span>
+               
+            </div>
             
 
         </form>

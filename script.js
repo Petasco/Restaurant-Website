@@ -74,3 +74,4 @@ function sendViaWhatsApp() {
   // open the WhatsApp url on a new tab
   window.open(url, '_blank').focus();
 }
+

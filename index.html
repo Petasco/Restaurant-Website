@@ -18,19 +18,8 @@
 
 <header>
 
-    <a href="#" class="logo"><img src="./images/pizzaman_logo.png" alt="pizzaman logo"></a>
+    <a href="./marketplace.html" class="logo"><img src="./images/pizzaman_logo.png" alt="pizzaman logo"></a>
     <a href="" class="call"><i class="fas fas fa-phone"></i> 0547736844</a>
-
-    <div class="search-box">
-        <input type="text" placeholder="Search">
-
-        <div class="search-btn">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
 
     <div id="menu-bar" class="fas fa-bars"></div>
 
@@ -40,7 +29,7 @@
         <a href="#popular">popular</a>
         <a href="#gallery">gallery</a>
         <a href="#review">review</a>
-        <a href="#order">order</a>
+        <a href="./marketplace.html">market</a>
     </nav>
 
 </header>
@@ -163,6 +152,7 @@
 <section class="popular" id="popular">
 
     <h1 class="heading"> most <span>popular</span> foods </h1>
+
 
     <div class="box-container">
         <!-- ==================== Row  1 ======================== -->
@@ -288,6 +278,7 @@
         </div>
 
         <!-- ===================== Row 4 ======================== -->
+
         <div class="box">
             <span class="price"> Ghc 50 </span>
             <img src="images/p-4.jpg" alt="tasty cupcakes image">
@@ -329,7 +320,6 @@
         </div>
 
     </div>
-
 </section>
 
 <!-- popular section ends -->
@@ -519,87 +509,6 @@
 
 <!-- review section ends -->
 
-<!-- order section starts  -->
-
-<section class="order" id="order">
-
-    <h1 class="heading"> <span>order</span> now </h1>
-
-    <div class="row">
-        
-        <div class="image">
-            <img src="images/order-img.jpg" alt="servant image">
-        </div>
-
-       <!--  <form action="sendorder.php" method="POST"> -->
-        <form action="https://formsubmit.co/1470d7537d3f50b1e240c7723ff4f198" method="POST"> 
-            <input type="hidden" name="_template" value="table">
-            
-            <input type="hidden" name="_subject" value="New Order submission!">
-            <input type="hidden" name="_autoresponse" value="Your Order has been Submitted Successfully!">
-             
-            <div class="inputBox">
-                <input type="text" id="name" name="Name" placeholder="Name" required>
-                <input type="email" id="email" name="Email" placeholder="Email" required>
-
-                
-            </div>
-
-            <div class="inputBox">
-                <input type="text" id="number" name="Number" placeholder="Phone Number" required>
-                
-                <select name="Foodname" id="foodname" required>
-                    <option value="" disabled selected hidden>Select Food</option>
-                    <option value="Tuna Pizza">Tuna Pizza - Ghc 80</option>
-                    <option value="Burger">Burger - Ghc 80</option>
-                    <option value="Chicken">Chicken - Ghc 70</option>
-                    <option value="Hawaiian">Hawaiian - Ghc 75</option>
-                    <option value="Kersame">Kersame - Ghc 75</option>
-                    <option value="Crisibreezi">Crisibreezi - Ghc 70</option>
-                    <option value="Gretaben">Gretaben - Ghc 50</option>
-                    <option value="Cakes">Cakes - Ghc 50</option>
-                </select>
-                <input type="number" id="quantity" name="Quantity" placeholder="Qauntity" required>
-            </div>
-            
-
-            <textarea placeholder="Delivery Address" name="Address" id="address" cols="30" rows="10"></textarea>
-            <div class="payment">
-                <h5>Note: Payment on Delivery</h5>
-            </div>
-            <!--
-                <div class="payment">
-                <h2>Pay via Mobile Money</h2>
-                <div class="payment_options">
-                    <div>
-                        <h3> <input type="radio" name="payment" value="mtn">&nbsp; MTN</h3>
-                        <p>0547736844</p>
-                    </div>
-                    <div>
-                        <h3><input type="radio" name="payment" value="voda">&nbsp; Vodafone</h3>
-                        <p>8736844</p>
-                    </div>
-                    <div>
-                        <h3><input type="radio" name="payment" value="airtel">&nbsp; AirtelTigo</h3>
-                        <p>0267736844</p>
-                    </div>
-                </div>
-            </div>
-            -->
-
-            <input type="submit" value="submit" class="btn payment_btn">
-            <span
-                onclick="sendViaWhatsApp()">
-                <input type="submit" value="WhatsApp" class="btn payment_btn">
-            </span>
-
-        </form>
-
-    </div>
-    
-</section>
-
-<!-- order section ends -->
 
 <!-- ============= Google Map ================== -->
 <section>

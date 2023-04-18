@@ -43,6 +43,7 @@ section{
 
 .heading span{
   color:var(--red);
+  font-size: 35px;
 }
 
 .btn{
@@ -163,7 +164,7 @@ header .navbar a:hover{
   width: 35px;
   color: #fff;
   z-index: 1;
-  background: #df0000;
+  background: #ff3838;
   line-height: 50px;
   font-size: 20px;
   text-align: center;
@@ -174,7 +175,7 @@ header .navbar a:hover{
   right: 3px;
   width: 35px;
   height: 35px;
-  background: #df0000;
+  background: #ff0000;
   line-height: 50px;
   transform: translateY(-50%) rotate(360deg);
 }
@@ -649,7 +650,6 @@ header .navbar a:hover{
   width: 100%;
   position: absolute;
 }
-
 
 
 

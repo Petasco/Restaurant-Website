@@ -1,4 +1,31 @@
 <?php
+$dbhost = 'localhost';
+$dbuser ='root';
+$dbpassword = 'RockMade@1844';
+$dbname = 'dborder';
+// connect database
+$dbConn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
+if ($dbConn -> connect_error){
+  die("Sorry... No Connection");
+} else{
+  echo "Success";
+};
+// get the data from the form
+$name = $_POST['Name'];
+$email = $_POST['Email'];
+$number = $_POST['Number'];
+$foodname = $_POST['Foodname'];
+$quantity = $_POST['Quantity'];
+$address = $_POST['Address'];
+
+// insert form data into the database
+$sql = "INSERT INTO orders('Id','Name','Email','Number','Food','Quantity','Address') VALUES ('0', 'name', 'email', 'number', 'foodname', 'quantity', 'address')";
+
+$rs = mysqli_query($con, $sql);
+if ($rs){
+  echo "Data recorded";
+}
+
 // get the data from the form
 $name = $_POST['Name'];
 $email = $_POST['Email'];

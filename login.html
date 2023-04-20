@@ -39,20 +39,34 @@
         
         <div class="wrapper">
             <h1>Login</h1>
-            <form action="">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
+            <form name="userform" action="user.php" method="POST">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
             </form>
             <div class="terms">
                 <label><a href="#">Forgot Password?</a></label>
             </div>
-            <button><a href="">Login</a></button>
+            <button id="btn"><a href="">Login</a></button>
             <div class="member">
                 New Here? <a href="./signup.html">Sign Up</a>
             </div>
         </div>
     </section>
+   
+    <!-- 
+        <script>
+        function validateData(){
+            var user = document.userform.username.value;
+            var passwrd = document.userform.password.value;
 
+            if (user.length == "" || passwrd == ""){
+                alert("Username or Password is Empty");
+                return false;
+            }
+        }
+        
+    </script>
+     -->
 
     <!-- custom js file link  -->
     <script src="script.js"></script>

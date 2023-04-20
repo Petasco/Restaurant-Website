@@ -28,11 +28,4 @@ if ($rs){
   echo "Sign Up Successfully";
 }
 
-$sql = "SELCT * FROM User WHERE Username = '$username' and Password = '$password'";
-if ("$username == Username & $password == Password"){
-    echo "Login Successfully";
-}
-else {
-    echo "Incorrect Details";
-}
 ?>
